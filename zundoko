@@ -1,0 +1,17 @@
+import random
+
+zd = [1,1,1,1,1]
+zundoko = [0,0,0,0,1]
+
+while(zd != zundoko):
+	random.randint(1,100)
+	if (random.randint(1,100) %2 == 0) :
+		zd.append(0)
+		print('ズン')
+	else:
+		zd.append(1)
+		print('ドコ')
+	zd.remove(zd[0])
+		
+if(zd == zundoko):
+	print('キ・ヨ・シ')
